@@ -18,7 +18,7 @@ namespace DownloadSheet1
             string[] Scopes = { DriveService.Scope.DriveReadonly };
             string ApplicationName = "########";
             string fileId = "########";
-            string path = @"########";
+            string path = @"########"; //Include filename & extension i.e. sheet001.xlsx
             var jetStream = new System.IO.MemoryStream();
 
             using (var stream =
