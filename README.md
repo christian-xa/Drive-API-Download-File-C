@@ -9,7 +9,7 @@ Requirements:
 Turn on the Drive API and Download Credentials
 
 Follow this[1] guide to create a Google developers project and enable OAuth consent.
-Download the client configuration file and save the file credentials.json to your working directory.
+Download the client configuration file and SAVE THE FILE credentials.json TO YOUR WORKING DIRECTORY.
 
 
 2.
@@ -21,4 +21,8 @@ Google.Apis.Auth
 Google.Apis
 
 3.
-Use "program.cs" in place of your own. Follow the prompts at run time.
+Use "program.cs" in place of your own. 
+Replace the following variables:
+ApplicationName
+fileId
+path
