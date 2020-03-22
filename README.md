@@ -1,5 +1,7 @@
-# Drive-API-Download-File-C
+# Drive-API-Download-Sheet-C#
 This C# code uses the .NET Framework, and will download an excel sheet from Google Drive to the specified location.
+
+NOTE*** To change the file type you are downloading, change the MIME Type in "FilesResource.ExportRequest request"
 
 Requirements:
 
