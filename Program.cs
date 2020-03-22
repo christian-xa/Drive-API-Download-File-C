@@ -14,7 +14,7 @@ namespace DownloadSheet1
             {
             UserCredential credential;
 
-            // If modifying these scopes, delete your previously saved credentials.json
+            // If modifying these scopes, delete previously saved token.json
             string[] Scopes = { DriveService.Scope.DriveReadonly };
             string ApplicationName = "########";
             string fileId = "########";
