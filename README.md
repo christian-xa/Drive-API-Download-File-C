@@ -11,7 +11,7 @@ Turn on the Drive API and Download Credentials
 
 Follow this[1] guide to create a Google developers project and enable OAuth consent.
 Download the client configuration file and SAVE THE FILE credentials.json TO YOUR WORKING DIRECTORY.
-
+[1]: https://support.google.com/cloud/answer/6158849?hl=en
 
 2.
 Create a new .NET Framework project and install the following NuGet Packages:
