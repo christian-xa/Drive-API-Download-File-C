@@ -14,8 +14,7 @@ namespace DownloadSheet1
             {
             UserCredential credential;
 
-            // If modifying these scopes, delete your previously saved credentials
-            // at ~/.credentials/drive-dotnet-quickstart.json
+            // If modifying these scopes, delete your previously saved credentials.json
             string[] Scopes = { DriveService.Scope.DriveReadonly };
             string ApplicationName = "########";
             string fileId = "########";
@@ -37,13 +36,12 @@ namespace DownloadSheet1
                     Console.WriteLine("Credential file saved to: " + credPath);
                 }
 
-                // Create Drive API service.
                 var service = new DriveService(new BaseClientService.Initializer()
                 {
                     HttpClientInitializer = credential,
                     ApplicationName = ApplicationName,
                 });
-
+            
             FilesResource.ExportRequest request = new FilesResource.ExportRequest(service, fileId, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 
             request.MediaDownloader.ProgressChanged += (Google.Apis.Download.IDownloadProgress progress) =>
